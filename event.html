@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+    <link
+      rel="stylesheet"
+      href="assests/bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assests/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"
+    />
+    <link rel="stylesheet" href="assests/css/master.css" />
+    <title>Event Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="index.html"
+            ><img class="logo" src="assests/imgs/d-logo.png" alt=""
+          /></a>
+        </div>
+        <img class="logo" src="assests/imgs/logo.jpg" alt="logo" />
+        <span>
+          <span class="mode"></span>
+        </span>
+        <nav>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <ul>
+            <li><a href="events.html">الأحداث</a></li>
+            <li><a href="aboutUs.html">حولنا</a></li>
+            <li><a href="cantctUs.html">تواصل معنا</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="page-container"></div>
+        <div
+          class="map"
+          style="
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border-radius: 8px;
+          "
+        ></div>
+
+        <h2>فعاليات مقترحة</h2>
+        <div class="page-slider-container">
+          <button id="pre">&lArr;</button>
+          <div class="page-events-container slider"></div>
+          <button id="next">&rArr;</button>
+        </div>
+      </main>
+      <footer>All Rights Saved - 2026 &copy;</footer>
+    </div>
+
+    <script src="assests/js/main.js"></script>
+  </body>
+</html>
