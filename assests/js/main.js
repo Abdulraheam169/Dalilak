@@ -247,7 +247,8 @@ if (document.body.contains(document.querySelector(".main-events-container"))) {
     }
   });
 }
-// check form
+
+// Check Form
 
 if (document.contains(document.querySelector(".form-control"))) {
   let email = document.querySelector(".form-control");
@@ -257,7 +258,6 @@ if (document.contains(document.querySelector(".form-control"))) {
   let regex = /^[0-9A-Za-z._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   let formAlert = document.createElement("div");
-  formAlert.classList = "alert alert-warning ";
   formAlert.role = "alert";
 
   submit.onclick = (e) => {
@@ -266,12 +266,15 @@ if (document.contains(document.querySelector(".form-control"))) {
       formAlert.remove();
     }, 3000);
     if (!regex.test(email.value) && email.value.length > 0) {
+      formAlert.classList = "alert alert-warning ";
       formAlert.innerText = "الإيميل خاطئ، حاول مرة أخرى";
       document.body.appendChild(formAlert);
     } else if (email.value.length === 0) {
+      formAlert.classList = "alert alert-warning ";
       formAlert.innerText = "لا يوجد إيميل";
       document.body.appendChild(formAlert);
     } else if (mes.value.length === 0) {
+      formAlert.classList = "alert alert-warning ";
       formAlert.innerText = "اكتب رسالة";
       document.body.appendChild(formAlert);
     } else {

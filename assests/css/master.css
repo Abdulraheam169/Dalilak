@@ -140,6 +140,9 @@ header .mode::after {
       display: none;
     }
   }
+  header .mode::after {
+    content: "";
+  }
   .bar {
     width: 100%;
     height: 2px;
